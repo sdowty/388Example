@@ -1,7 +1,7 @@
 # ECE 388 Board Submission Standards
 
 ## Directory Layout
-In the base Directory should be your Eagle project files, a directory called "cam" that contains the DRC filed and CAM job files (You will use the ones in this repository), and a directory called "renders" which contains the output files from your project. If you want to also version control your firmware (which you probably should) you can have a folder called "software" or "firmware" to manage code.  
+In the base Directory should be your Eagle project files, a directory called "cam" that contains the DRC files and CAM job files (You will use the ones in this repository), and a directory called "renders" which contains the output files from your project. If you want to also version control your firmware (which you probably should) you can have a folder called "software" or "firmware" to manage code.  
 
 ## Submissions
 Submissions should be in the form of Github Releases.  When a deadline comes around whatever the latest release on your repo is will be taken as your submission.  
