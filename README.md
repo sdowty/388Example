@@ -8,10 +8,25 @@ Submissions should be in the form of Github Releases.  When a deadline comes aro
 
 Documentation on how to create a release can be found [HERE](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository).
 
+#### BOM Submission
+You will create a release titled "BOM Submission"
+
+We will be using [LCSC](https://lcsc.com) as out preferred supplier.  As such, all parts should be sourceable from LCSC unless previously discussed with myself.  Once submitted each group will meet with me for a BOM review.  BOM's should be exported from Eagle with a list type of values and a format of CSV.  This can be done by clicking the RUN ULP button, selecting the necessary settings, and saving the output into the base directory.  
+
+![runUlp](/readmeImg/runUlp.png).
+![ulpSelect](/readmeImg/ulpSelect.png).
+![bomUlp](/readmeImg/bomUlp.png).
+
+After Eagle generates a BOM file you need to open it in a CSV editor of your choice, excel, open office, atom if your a cool kid, and patch in the additional data needed to submit.  This includes price breakdowns, LCSC part numbers and links.  If a part is not available from LCSC and you have discussed this with me you can enter data into the DigiKey fields, otherwise they are unnessary.
+
+**All parts necessary for production of you board must be on the BOM** this included displays, connectors, wiring, etc.  If you need it for your board to be functional it needs to be on the BOM.  
+
 #### Schematics Submission
+You will create a release called "Schematic Submission"
+
 ERC must be run on all schematic before submission.  ERC errors will not only make your board not work, it will also make your design get rejected.  Schematics should be submitted as a PDF located in the "renders" folder.  To get Eagle to produce a PDF of your schematic, go to File > Print and select the following settings.  
 
-![schematicToPDF](/readmeImg/exportToPDF.png).
+![schematicToPDF](/readmeImg/exportToPDF.png)
 
 It's important that if you have more than one page that you select to export all pages.
 
@@ -27,6 +42,7 @@ Periodically while  laying out your board you should run a DRC to verify there a
 Notice my DRC has 0 Errors and 12 Approved.  That means there were 12 errors that have been reviewed and deemed acceptable.  You should consult myself, Dr. Forier, or Dr. Viall before approving DRC faults.  
 
 #### Board Submission
+You will create a release called "Gerber Submission"
 
 DRC must be run on your board prior to submitting.  Any DRC errors will result in your design being rejected.  
 **Boards with critical DRC errors are unmanufacturable**
