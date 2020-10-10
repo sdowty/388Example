@@ -4,7 +4,7 @@
 In the base Directory should be your Eagle project files, a directory called "cam" that contains the DRC files and CAM job files (You will use the ones in this repository), and a directory called "renders" which contains the output files from your project. If you want to also version control your firmware (which you probably should) you can have a folder called "software" or "firmware" to manage code.  
 
 ## Submissions
-Submissions should be in the form of Github Releases.  When a deadline comes around whatever the latest release on your repo is will be taken as your submission.  
+Submissions should be in the form of Github Releases.  When a deadline comes around whatever the latest release on your repo is will be taken as your submission.  You should not email me submissions, moving forward email submissions will not be graded.  
 
 Documentation on how to create a release can be found [HERE](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository).
 
@@ -17,9 +17,11 @@ We will be using [LCSC](https://lcsc.com) as out preferred supplier.  As such, a
 ![ulpSelect](/readmeImg/ulpSelect.png).
 ![bomUlp](/readmeImg/bomUlp.png).
 
-After Eagle generates a BOM file you need to open it in a CSV editor of your choice, excel, open office, atom if your a cool kid, and patch in the additional data needed to submit.  This includes price breakdowns, LCSC part numbers and links.  If a part is not available from LCSC and you have discussed this with me you can enter data into the DigiKey fields, otherwise they are unnessary.
+After Eagle generates a BOM file you need to open it in a CSV editor of your choice, excel, open office, atom if your a cool kid, and patch in the additional data needed to submit.  This includes price breakdowns, LCSC part numbers and links.  If a part is not available from LCSC and you have discussed this with me you can enter data into the DigiKey fields, otherwise they are unnessary.  Note price breakdowns are for the cost of 1 part at the listed quantity, not the extended price.  
 
-**All parts necessary for production of you board must be on the BOM** this included displays, connectors, wiring, etc.  If you need it for your board to be functional it needs to be on the BOM.  
+**All parts necessary for production of you board must be on the BOM** this included displays, connectors, wiring, etc.  If you need it for your board to be functional it needs to be on the BOM. Components that are not physical parts, ex mounting holes, fiducials, etc, should not be included.  
+
+**We are ordering parts from LCSC.  BOMs that do not have LSCS part numbers will be rejected**
 
 #### Schematics Submission
 You will create a release called "Schematic Submission"
@@ -40,6 +42,8 @@ Periodically while  laying out your board you should run a DRC to verify there a
 ![drc](/readmeImg/drc.png)
 
 Notice my DRC has 0 Errors and 12 Approved.  That means there were 12 errors that have been reviewed and deemed acceptable.  You should consult myself, Dr. Forier, or Dr. Viall before approving DRC faults.  
+
+To verify you read this put a text file in the CAM folder titled "Verification.txt" that contains the line "This Board contains no Green M&Ms" and nothing else.  
 
 #### Board Submission
 You will create a release called "Gerber Submission"
