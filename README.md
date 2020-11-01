@@ -33,7 +33,7 @@ ERC must be run on all schematic before submission.  ERC errors will not only ma
 It's important that if you have more than one page that you select to export all pages.
 
 #### Board Layout
-It is important that the first thing you do when you start to layout your board is to setup your DRCs.  DRCs are the minimum checks you can do to make sure your board will have the possibility of being manufacturable.  They do not however verify your board will work correctly.  DRC files are provided in the "cam" folder of this repository.  Depending on which board manufacturer we decide to use will reflect which of the two we use.  To load a DRC file type "drc" in the eagle command window.  This will open a dialog where you can load in a DRC file.  We will be using the Dirty8TS.dru, this will set the minimum trace width and space between traces to 8mil.  Power traces should be set to a minimum trace widht of 12 mil or larger depending on current consumption.  
+It is important that the first thing you do when you start to layout your board is to setup your DRCs.  DRCs are the minimum checks you can do to make sure your board will have the possibility of being manufacturable.  They do not however verify your board will work correctly.  DRC files are provided in the "cam" folder of this repository.  To load a DRC file type "drc" in the eagle command window.  This will open a dialog where you can load in a DRC file.  We will be using the Dirty8TS.dru, this will set the minimum trace width and space between traces to 8mil.  Power traces should be set to a minimum trace widht of 12 mil or larger depending on current consumption.  
 
 ![drcLoad](/readmeImg/loadDRC.png)
 
