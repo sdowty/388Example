@@ -55,5 +55,9 @@ Boards will be submitted in a folder containing gerber files produced with the p
 
 ![camFileSelect](/readmeImg/camFileSelect.png)
 
+#### Board Pupulation
+
+In order to get a board assembled through the automated assembly process you must submit a finalized BOM that includes quantities, UUIDs from the stock sheet [HERE](https://docs.google.com/spreadsheets/d/1WtOakf2sV2Z24B9SvWYXxpJuLNhJUgvYpcEkdbbXuQU/edit#gid=0) and designators.  If a component is being sourced by you rather than a part that was ordered from the BOM you should put a "Y" in the self sourced column.  This file should only reflect components that need to be populated on the board.  i.e. resistors, caps, ICs, not mounting holes or solder jumpers.  An example of this is attached can be seen in this repo.  It should be named yourProjectName_assembly.csv and be in the base directory of your project when you create an assembly release.  Once you have submitted this file and your eagle project files are in the repo you can schedule an appointment to get your board assembled via the doodle poll that will be sent out via email.  
+
 
 I can not recommend strongly enough that you have everything in as early as possible.  Your designs will likely get rejected the first time and you need time to be able to get a manufacturable board in before the deadline to order.  
