@@ -51,7 +51,7 @@ You will create a release called "Gerber Submission"
 DRC must be run on your board prior to submitting.  Any DRC errors will result in your design being rejected.  
 **Boards with critical DRC errors are unmanufacturable**
 
-Boards will be submitted in a folder containing gerber files produced with the provided CAM files.  To Load the CAM file open the CAM Processor and click the LOAD button.
+Boards will be submitted in a folder containing gerber files produced with the provided CAM files.  To Load the CAM file open the CAM Processor and click the LOAD button.  The output of the CAM processor should be set to the renders folder.  
 
 ![camFileSelect](/readmeImg/camFileSelect.png)
 
